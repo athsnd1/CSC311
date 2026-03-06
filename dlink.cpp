@@ -8,23 +8,23 @@ struct Node{
 };
 
 int main(){
-    Node* head = new Node;
+    Node* head = new Node();
 
-    Node* node1 = new Node;
+    Node* node1 = new Node();
     node1 -> data = 5;
     node1 -> next = nullptr;
     node1 -> prev = nullptr;
 
     head = node1;
 
-    Node* node2 = new Node;
+    Node* node2 = new Node();
     node2 -> data = 10;
     node2 -> next = nullptr;
     node2 -> prev = head;
     
     node1 -> next = node2;
 
-    Node* node3 = new Node;
+    Node* node3 = new Node();
     node3 -> data = 20;
     node3 -> next = nullptr;
     node3 -> prev = node2;

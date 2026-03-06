@@ -11,7 +11,7 @@ Node* reverseList(Node* head){
 
     // the mental picture i'm painting is: a->b->c->nullptr
     while(curr!=nullptr){
-        Node* next = curr->next; //next now points to b since a is the current node
+        Node* next = curr->next; //next now points to b since a is the current node, we saved b in next
         curr->next = prev; //now b points to nothing/prev/nullptr for a moment
         prev = curr; //at this point b now points to a bc prev is now a (the current node)
         curr = next; //now we switch from node a to node b

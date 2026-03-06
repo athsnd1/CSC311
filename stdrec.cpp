@@ -3,12 +3,12 @@
 using namespace std;
 
 struct Student {
-    std::string name;
+    string name;
     int score;
-    std::string grade;
+    string grade;
 };
 
-std::string getGrade(Student std){
+string getGrade(Student std){
     
         if(std.score > 70 && std.score < 100){
             return std.grade = "A";
@@ -50,9 +50,9 @@ double avgScore(std::vector<Student> students){
     return avg;
 }
 
-void displayStd(std::vector<Student> students){
+void displayStd(vector<Student> students){
     cout<<"Name   "<<"Score   "<<"Grade"<<"\n";
-    std::cin.ignore(1000, '\n');
+    cin.ignore(1000, '\n');
     for(Student std : students){
         cout <<std.name<<"   "<< std.score<<"   "<<std.grade<<"\n";
     }
@@ -74,6 +74,6 @@ int main(){
         }
         }
     
-    std::vector<Student> students = getStudents(numStd);
+    vector<Student> students = getStudents(numStd);
     displayStd(students);
 }

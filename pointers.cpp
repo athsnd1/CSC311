@@ -7,6 +7,7 @@ int main(){
     cout<<"x address: "<<&x<<endl;
     cout<<"p value(address): "<<p<<endl;
     cout<<"p points to value: "<<*p<<endl;
+    cout<<"&p: "<<&p<<endl;
     *p = 12; // this changes the original value of x to 12
     cout<<"x was changed to: "<<x<<endl;
     cout<<"x address: "<<&x<<endl;// the address of x is now equal to the address of p
@@ -19,12 +20,13 @@ int main(){
     int* pointer = nums;
     //traversing the array:
     for(int i = 0;i<5;i++){
-        cout<<*(pointer)<<endl;
-        cout<<*(pointer + 1)<<endl;
-        cout<<*(pointer + 2)<<endl;
-        cout<<*(pointer + 3)<<endl;
+        cout<<*(pointer);
+        cout<<*(pointer + 1);
+        cout<<*(pointer + 2);
+        cout<<*(pointer + 3);
         cout<<*(pointer + 4)<<endl;
     }
+    cout<<"value of first element in the array pointer"<<*pointer<<endl;//*pointer here is equivalent to nums[0]
 
     //null pointer:
     int* ptr = nullptr;
